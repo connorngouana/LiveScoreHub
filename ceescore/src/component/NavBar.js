@@ -1,27 +1,54 @@
-
-import { useRef } from "react";
-import React from "react";
+import React, { useContext, useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "../Styles/main.css";
-import {NavLink} from "react-router-dom"
+import { UserContext } from "./userContext/userContext";
+import { NavLink } from "react-router-dom"; // Update import here
+import { Nav, NavDropdown } from "react-bootstrap";
+import SignOut from "../Pages/SignOut";
 
-function NavBar() {
+function NavBar(props) {
   const navRef = useRef();
-  const loginRef = useRef();
-
+  const { isLoggedIn } = useContext(UserContext);
 
   const showNavBar = () => {
     navRef.current.classList.toggle("responsive_nav");
-    loginRef.current.classList.toggle("responsive_nav");
-  
   };
 
   function handleClick() {
     window.location = "/";
   }
-  
-  function LoginClick() {
-    window.location = "/Login";
+
+  let menu;
+
+  if (!props.name) {
+    menu = (
+      <nav ref={navRef}>
+        <NavLink to="/Scores">Scores</NavLink>
+        <NavLink to="/Favourite">Favourites</NavLink>
+        <NavLink to="/Chat">Chat</NavLink>
+        <NavLink to="/contact">Contact</NavLink>
+        <NavLink to="/SignUp">SignUp/Login</NavLink>
+      <button className="nav-btn nav-close-btn" onClick={showNavBar}>
+      <FaTimes />
+    </button>
+
+      </nav>
+    )
+  } else {
+    menu = (
+      <nav ref={navRef}>
+      <NavLink to="/Scores">Scores</NavLink>
+      <NavLink to="/Favourite">Favourites</NavLink>
+      <NavLink to="/Chat">Chat</NavLink>
+      <NavLink to="/contact">Contact</NavLink>
+      <NavLink to="/SignOut" onClick={<SignOut />}>
+        SignOut
+      </NavLink>
+    <button className="nav-btn nav-close-btn" onClick={showNavBar}>
+    <FaTimes />
+  </button>
+   </nav>
+    );
   }
 
   return (
@@ -29,23 +56,10 @@ function NavBar() {
       <button className="HomeButton" onClick={handleClick}>
         CeeScoresLive
       </button>
-      <nav ref={navRef}>
-
-        <NavLink to="/Scores">Scores</NavLink>
-        <NavLink to="/Favourite">Favourites</NavLink>
-        <NavLink to="/about">About</NavLink>
-        <NavLink to="/contact">Contact</NavLink>
-
-        <button className="nav-btn nav-close-btn" onClick={showNavBar}>
-          <FaTimes />
-        </button>
-      </nav>
-    
-      <button ref={loginRef} onClick={LoginClick}className="login">Login/Sign Up</button>
-      
+      {menu}
       <button className="nav-btn" onClick={showNavBar}>
-        <FaBars />
-      </button>
+      <FaBars />
+    </button>
     </header>
   );
 }

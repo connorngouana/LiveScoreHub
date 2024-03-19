@@ -1,68 +1,65 @@
-import React, { useState } from "react";
-import axios from "axios";
-import { useNavigate, Link } from "react-router-dom";
+import React, { useState } from 'react';
+import axios from 'axios';
+import { Link, useNavigate } from "react-router-dom";
+
 
 function Login() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const [token, setToken] = useState('');
   const navigate = useNavigate();
 
-  async function submit(e) {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
     try {
-      await axios.post("http://localhost:3000/Login", {
-          email,
-          password,
-        })
+      const response = await axios.post('http://localhost:5000/auth/login', {
+        email,
+        password
+      });
+      setToken(response.data);
+      console.log('User Login Complete:', response.data);
+      
+      console.log(token);
+      navigate('/');
 
-        .then((res) => {
-          if (res.data === "exist") {
-            navigate("/", { state: { id: email } });
-          } else if (res.data === "not exist") {
-            alert("No account with this email/password");
-          }
-        })
-
-        .catch((e) => {
-          alert("wrong details, Try Again");
-          console.error(e);
-        });
-    } catch (e) {
-      console.log(e);
+      
+     
+    } catch (response) {
+      setError(response.error);
     }
-  }
+  };
 
   return (
-    <div className="loginPage">
-      <h1>Login</h1>
-
-      <form action="POST">
-        <input
-          type="email"
-          value={email}
-          onChange={(e) => {
-            setEmail(e.target.value);
-          }}
-          placeholder="email"
-        />
-        <input
-          type="password"
-          value={password}
-          onChange={(e) => {
-            setPassword(e.target.value);
-          }}
-          placeholder="password"
-        />
-        <input type="submit" onClick={submit} Login />
+    <div>
+      <h2>Login</h2>
+      <form onSubmit={handleSubmit}>
+        <div>
+          <label>Email:</label>
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+        </div>
+        <div>
+          <label>Password:</label>
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+        </div>
+        {error && <div style={{ color: 'red' }}>{error}</div>}
+        <button type="submit">Login</button>
       </form>
-
-      <br />
 
       <p>OR</p>
       <br />
 
-      <Link to="/SignUp">Sign Up Page</Link>
+      <Link to="/SignUp">Sign Up</Link>
     </div>
   );
 }
