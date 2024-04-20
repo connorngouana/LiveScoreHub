@@ -1,11 +1,9 @@
-const Profiles = (props) => {
- 
-    return(
+function Profiles(props) {
+  return (
+    <div>
+      {props.name ? 'No ' + props.name : 'You are not logged in'}
+    </div>
+  );
+}
 
-      <div>
-      Hi {props.name ? 'Hi ' + props.name : 'You are not logged in'}
-      </div>
-    );
-    };
-
-    export default Profiles;
+export default Profiles;

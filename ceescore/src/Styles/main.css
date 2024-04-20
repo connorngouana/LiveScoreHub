@@ -116,7 +116,9 @@ this is for the responsive part of the navbar this only works when screen size i
   header .nav-btn {
     visibility: visible;
     opacity: 1;
+   
   }
+
   .login{
     visibility: visible;
   }
@@ -134,6 +136,7 @@ this is for the responsive part of the navbar this only works when screen size i
     gap: 1.5rem;
     background-color: var(--mainColor);
     transition: 1s;
+    z-index: 1;
   }
 
   

@@ -1,0 +1,402 @@
+[
+    {
+        "question": "Which country won the 2022 FIFA World Cup?",
+        "optionA": "Brazil",
+        "optionB": "France",
+        "optionC": "Argentina",
+        "optionD": "Germany",
+        "answer": "Argentina"
+    },
+    {
+        "question": "Who won the Ballon d'Or in 2023?",
+        "optionA": "Lionel Messi",
+        "optionB": "Cristiano Ronaldo",
+        "optionC": "Karim Benzema",
+        "optionD": "Kevin De Bruyne",
+        "answer": "Lionel Messi"
+    },
+    {
+        "question": "Which team won the UEFA Champions League in 2023?",
+        "optionA": "Manchester City",
+        "optionB": "Real Madrid",
+        "optionC": "Liverpool",
+        "optionD": "Bayern Munich",
+        "answer": "Real Madrid"
+    },
+    {
+        "question": "Who was the top scorer in the Premier League for the 2022-2023 season?",
+        "optionA": "Mohamed Salah",
+        "optionB": "Harry Kane",
+        "optionC": "Erling Haaland",
+        "optionD": "Son Heung-min",
+        "answer": "Erling Haaland"
+    },
+    {
+        "question": "Which club won the 2022-2023 Serie A title?",
+        "optionA": "AC Milan",
+        "optionB": "Inter Milan",
+        "optionC": "Napoli",
+        "optionD": "Juventus",
+        "answer": "Napoli"
+    },
+    {
+        "question": "Who is the captain of the England national football team as of 2023?",
+        "optionA": "Jordan Henderson",
+        "optionB": "Harry Kane",
+        "optionC": "Raheem Sterling",
+        "optionD": "Harry Maguire",
+        "answer": "Harry Kane"
+    },
+    {
+        "question": "Which player won the Golden Boot at the 2022 FIFA World Cup?",
+        "optionA": "Lionel Messi",
+        "optionB": "Kylian Mbappe",
+        "optionC": "Karim Benzema",
+        "optionD": "Cristiano Ronaldo",
+        "answer": "Kylian Mbappe"
+    },
+    {
+        "question": "Which country hosted the UEFA Euro 2020 tournament, held in 2021 due to the COVID-19 pandemic?",
+        "optionA": "France",
+        "optionB": "Germany",
+        "optionC": "Multiple countries",
+        "optionD": "Spain",
+        "answer": "Multiple countries"
+    },
+    {
+        "question": "As of 2023, which player has the most career goals in football?",
+        "optionA": "Pele",
+        "optionB": "Cristiano Ronaldo",
+        "optionC": "Lionel Messi",
+        "optionD": "Ferenc Puskás",
+        "answer": "Cristiano Ronaldo"
+    },
+    {
+        "question": "Which team won the Copa America in 2021?",
+        "optionA": "Brazil",
+        "optionB": "Argentina",
+        "optionC": "Uruguay",
+        "optionD": "Chile",
+        "answer": "Argentina"
+    },
+    {
+        "question": "Who won the UEFA Women's Champions League in 2023?",
+        "optionA": "FC Barcelona",
+        "optionB": "Lyon",
+        "optionC": "Wolfsburg",
+        "optionD": "Chelsea",
+        "answer": "Lyon"
+    },
+    {
+        "question": "Which player was awarded the UEFA Men's Player of the Year in 2023?",
+        "optionA": "Lionel Messi",
+        "optionB": "Kevin De Bruyne",
+        "optionC": "Karim Benzema",
+        "optionD": "Robert Lewandowski",
+        "answer": "Karim Benzema"
+    },
+    {
+        "question": "Which country won the Women's World Cup in 2023?",
+        "optionA": "United States",
+        "optionB": "Netherlands",
+        "optionC": "Sweden",
+        "optionD": "Australia",
+        "answer": "United States"
+    },
+    {
+        "question": "Who is the all-time top scorer in UEFA Champions League history as of 2023?",
+        "optionA": "Lionel Messi",
+        "optionB": "Cristiano Ronaldo",
+        "optionC": "Robert Lewandowski",
+        "optionD": "Karim Benzema",
+        "answer": "Cristiano Ronaldo"
+    },
+    {
+        "question": "Which team won the FIFA Club World Cup in 2023?",
+        "optionA": "Chelsea",
+        "optionB": "Palmeiras",
+        "optionC": "Real Madrid",
+        "optionD": "Flamengo",
+        "answer": "Real Madrid"
+    },
+    {
+        "question": "Which player holds the record for the most Premier League assists?",
+        "optionA": "Ryan Giggs",
+        "optionB": "Kevin De Bruyne",
+        "optionC": "Cesc Fàbregas",
+        "optionD": "Thierry Henry",
+        "answer": "Ryan Giggs"
+    },
+    {
+        "question": "As of 2023, who is the manager of the Spain national football team?",
+        "optionA": "Luis Enrique",
+        "optionB": "Vicente del Bosque",
+        "optionC": "Fernando Hierro",
+        "optionD": "Luis de la Fuente",
+        "answer": "Luis de la Fuente"
+    },
+    {
+        "question": "Which club did Lionel Messi transfer to in 2021?",
+        "optionA": "Manchester City",
+        "optionB": "Paris Saint-Germain",
+        "optionC": "Inter Miami",
+        "optionD": "Newell's Old Boys",
+        "answer": "Paris Saint-Germain"
+    },
+    {
+        "question": "What year did Cristiano Ronaldo first win the Ballon d'Or?",
+        "optionA": "2008",
+        "optionB": "2007",
+        "optionC": "2009",
+        "optionD": "2010",
+        "answer": "2008"
+    },
+    {
+        "question": "Which team has won the most UEFA Champions League titles?",
+        "optionA": "AC Milan",
+        "optionB": "Liverpool",
+        "optionC": "Bayern Munich",
+        "optionD": "Real Madrid",
+        "answer": "Real Madrid"
+    },
+    {
+        "question": "Which player scored the fastest goal in World Cup history?",
+        "optionA": "Hakan Şükür",
+        "optionB": "Cristiano Ronaldo",
+        "optionC": "Pele",
+        "optionD": "Miroslav Klose",
+        "answer": "Hakan Şükür"
+    },
+    {
+        "question": "As of 2023, which club has won the most English Premier League titles?",
+        "optionA": "Chelsea",
+        "optionB": "Arsenal",
+        "optionC": "Manchester United",
+        "optionD": "Liverpool",
+        "answer": "Manchester United"
+    },
+    {
+        "question": "Who holds the record for the most goals in a single UEFA Champions League season?",
+        "optionA": "Lionel Messi",
+        "optionB": "Robert Lewandowski",
+        "optionC": "Cristiano Ronaldo",
+        "optionD": "Karim Benzema",
+        "answer": "Cristiano Ronaldo"
+    },
+    {
+        "question": "Which country has won the most Copa America titles?",
+        "optionA": "Brazil",
+        "optionB": "Argentina",
+        "optionC": "Uruguay",
+        "optionD": "Chile",
+        "answer": "Uruguay"
+    },
+    {
+        "question": "What is the name of the stadium where the English national team plays its home matches?",
+        "optionA": "Old Trafford",
+        "optionB": "Anfield",
+        "optionC": "Wembley Stadium",
+        "optionD": "Stamford Bridge",
+        "answer": "Wembley Stadium"
+    },
+    {
+        "question": "Which player has won the most UEFA European Championships?",
+        "optionA": "Cristiano Ronaldo",
+        "optionB": "Andres Iniesta",
+        "optionC": "Thierry Henry",
+        "optionD": "Zinedine Zidane",
+        "answer": "Cristiano Ronaldo"
+    },
+    {
+        "question": "Which team won the English Premier League in the 2021-2022 season?",
+        "optionA": "Manchester United",
+        "optionB": "Manchester City",
+        "optionC": "Liverpool",
+        "optionD": "Chelsea",
+        "answer": "Manchester City"
+    },
+    {
+        "question": "Who is the all-time top scorer of the UEFA European Championship (Euro)?",
+        "optionA": "Michel Platini",
+        "optionB": "Cristiano Ronaldo",
+        "optionC": "Alan Shearer",
+        "optionD": "Wayne Rooney",
+        "answer": "Cristiano Ronaldo"
+    },
+    {
+        "question": "Which nation won the first ever FIFA World Cup in 1930?",
+        "optionA": "Brazil",
+        "optionB": "Uruguay",
+        "optionC": "Italy",
+        "optionD": "Germany",
+        "answer": "Uruguay"
+    },
+    {
+        "question": "Who was named FIFA World Player of the Year in 2022?",
+        "optionA": "Lionel Messi",
+        "optionB": "Cristiano Ronaldo",
+        "optionC": "Robert Lewandowski",
+        "optionD": "Karim Benzema",
+        "answer": "Lionel Messi"
+    },
+    {
+        "question": "Who was the youngest player to ever play in a FIFA World Cup?",
+        "optionA": "Pelé",
+        "optionB": "Norman Whiteside",
+        "optionC": "Samuel Eto'o",
+        "optionD": "Freddy Adu",
+        "answer": "Norman Whiteside"
+    },
+    {
+        "question": "Which team won the Africa Cup of Nations in 2022?",
+        "optionA": "Nigeria",
+        "optionB": "Senegal",
+        "optionC": "Egypt",
+        "optionD": "Cameroon",
+        "answer": "Senegal"
+    },
+    {
+        "question": "Which player has the most caps for the England national team?",
+        "optionA": "David Beckham",
+        "optionB": "Peter Shilton",
+        "optionC": "Wayne Rooney",
+        "optionD": "Bobby Charlton",
+        "answer": "Peter Shilton"
+    },
+    {
+        "question": "As of 2023, who holds the record for the most goals in La Liga?",
+        "optionA": "Cristiano Ronaldo",
+        "optionB": "Lionel Messi",
+        "optionC": "Telmo Zarra",
+        "optionD": "Raul",
+        "answer": "Lionel Messi"
+    },
+    {
+        "question": "Which country hosted the 2018 FIFA World Cup?",
+        "optionA": "Brazil",
+        "optionB": "Russia",
+        "optionC": "Qatar",
+        "optionD": "South Africa",
+        "answer": "Russia"
+    },
+    {
+        "question": "Who is considered the inventor of the 'False 9' role in football?",
+        "optionA": "Pep Guardiola",
+        "optionB": "Luciano Spalletti",
+        "optionC": "Johan Cruyff",
+        "optionD": "Francesco Totti",
+        "answer": "Johan Cruyff"
+    },
+    {
+        "question": "Which player won the Golden Boot in the 2018 FIFA World Cup?",
+        "optionA": "Harry Kane",
+        "optionB": "Lionel Messi",
+        "optionC": "Antoine Griezmann",
+        "optionD": "Kylian Mbappe",
+        "answer": "Harry Kane"
+    },
+    {
+        "question": "Which club is known as 'The Old Lady'?",
+        "optionA": "AC Milan",
+        "optionB": "Inter Milan",
+        "optionC": "Juventus",
+        "optionD": "Roma",
+        "answer": "Juventus"
+    },
+    {
+        "question": "What is the maximum number of substitutions allowed in a regular FIFA World Cup match as of 2023?",
+        "optionA": "3",
+        "optionB": "5",
+        "optionC": "4",
+        "optionD": "Unlimited",
+        "answer": "5"
+    },
+    {
+        "question": "Which player has won the most FIFA World Cups?",
+        "optionA": "Diego Maradona",
+        "optionB": "Pelé",
+        "optionC": "Miroslav Klose",
+        "optionD": "Lionel Messi",
+        "answer": "Pelé"
+    },
+    {
+        "question": "What is the record number of goals scored by a team in a single Premier League season?",
+        "optionA": "95",
+        "optionB": "100",
+        "optionC": "106",
+        "optionD": "99",
+        "answer": "106"
+    },
+    {
+        "question": "Which country's national team is nicknamed 'La Furia Roja'?",
+        "optionA": "Mexico",
+        "optionB": "Spain",
+        "optionC": "Portugal",
+        "optionD": "Brazil",
+        "answer": "Spain"
+    },
+    {
+        "question": "Which club did Zinedine Zidane manage to three consecutive UEFA Champions League victories?",
+        "optionA": "Juventus",
+        "optionB": "Real Madrid",
+        "optionC": "AC Milan",
+        "optionD": "Barcelona",
+        "answer": "Real Madrid"
+    },
+    {
+        "question": "In what year was the first official international football match played?",
+        "optionA": "1872",
+        "optionB": "1900",
+        "optionC": "1892",
+        "optionD": "1880",
+        "answer": "1872"
+    },
+    {
+        "question": "Who scored the 'Hand of God' goal in the 1986 World Cup?",
+        "optionA": "Diego Maradona",
+        "optionB": "Pelé",
+        "optionC": "Lionel Messi",
+        "optionD": "Johan Cruyff",
+        "answer": "Diego Maradona"
+    },
+    {
+        "question": "Which team won the first ever European Championship in 1960?",
+        "optionA": "Soviet Union",
+        "optionB": "Yugoslavia",
+        "optionC": "Spain",
+        "optionD": "Italy",
+        "answer": "Soviet Union"
+    },
+    {
+        "question": "What year did FIFA introduce the goal-line technology?",
+        "optionA": "2014",
+        "optionB": "2012",
+        "optionC": "2010",
+        "optionD": "2008",
+        "answer": "2012"
+    },
+    {
+        "question": "Which player has the most Champions League final appearances?",
+        "optionA": "Cristiano Ronaldo",
+        "optionB": "Paco Gento",
+        "optionC": "Lionel Messi",
+        "optionD": "Franz Beckenbauer",
+        "answer": "Paco Gento"
+    },
+    {
+        "question": "Who was the first player to score in four UEFA European Championships?",
+        "optionA": "Cristiano Ronaldo",
+        "optionB": "Zlatan Ibrahimović",
+        "optionC": "Thierry Henry",
+        "optionD": "Luis Figo",
+        "answer": "Cristiano Ronaldo"
+    },
+    {
+        "question": "Which player scored the first goal in the history of the Premier League?",
+        "optionA": "Alan Shearer",
+        "optionB": "Eric Cantona",
+        "optionC": "Brian Deane",
+        "optionD": "Teddy Sheringham",
+        "answer": "Brian Deane"
+    }
+]

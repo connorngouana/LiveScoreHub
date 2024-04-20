@@ -8,10 +8,14 @@ import Login from "./Pages/Login";
 import Chat from "./Pages/Chat";
 import SignUp from "./Pages/SignUp";
 import Profiles from "./Pages/Profiles";
-import SignOut from "./Pages/SignOut";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import { UserContextProvider } from "./component/userContext/userContext";
-
+import ChatProvider from "./component/userContext/ChatProvider";
+import { ChakraProvider } from '@chakra-ui/react';
+import Quiz from "./Pages/Quiz";
+import Play from "./component/QuizComponents/Play";
+import QuizSummary from "./component/QuizComponents/QuizSummary";
+import ReadMe from "./component/NewsFolder/NewsText";
 
 function App() {
   const [name, setName] = useState('');
@@ -34,8 +38,11 @@ function App() {
     });
 
   return (
+    
     <UserContextProvider >
     <Router>
+    <ChakraProvider>
+    <ChatProvider >
       <NavBar name = {name} setName= {setName}/>    
         <Routes>
         <Route path="/" element={<Home />} />
@@ -44,11 +51,17 @@ function App() {
         <Route path="/Login" element={<Login />} />
         <Route path="/Chat" element={<Chat />} />
         <Route path="/SignUp" element={<SignUp />} />
-        <Route path="/Profiles" element={() => <Profiles name ={name}/>} />
-        <Route path="/SignOut" element={<SignOut />} />
+        <Route path="/Profiles" element={<Profiles name ={name} setName= {setName}/>} />
+        <Route path="/Quiz" element={<Quiz name ={name} setName= {setName}/>} />
+        <Route path="/Play" element={<Play />} />
+        <Route path="/QuizSummary" element={<QuizSummary />} />
+        <Route path="/news/:id" element={<ReadMe />} />
         </Routes>
+        </ChatProvider>
+        </ChakraProvider>
       </Router>
       </UserContextProvider>
+      
   );
 }
 
