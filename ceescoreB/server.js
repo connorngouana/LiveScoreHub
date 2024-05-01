@@ -2,8 +2,8 @@ import bodyParser from "body-parser";
 import cors from "cors";
 import dotenv from "dotenv";
 import express from "express";
-import { createServer } from "http"; // Import createServer from http module
-import { Server as SocketIOServer } from "socket.io"; // Import Server from socket.io
+import { createServer } from "http"; 
+import { Server as SocketIOServer } from "socket.io"; 
 
 import cookieParser from "cookie-parser";
 
@@ -36,7 +36,7 @@ app.get("/", (req, res) => {
   res.send("Hello this is the CeeScores server");
 });
 
-const httpServer = createServer(app); // Create HTTP server
+const httpServer = createServer(app); 
 const io = new SocketIOServer(httpServer, {
   pingTimeout: 60000,
   cors: {
@@ -46,20 +46,17 @@ const io = new SocketIOServer(httpServer, {
 
 io.on("connection", (socket) => { 
   console.log("connected to socket.io");
-
   socket.on("setup", (userData) => {
     socket.join(userData._id);
     socket.emit("connected");
   });
-
   socket.on("join chat" , (room) => {
     socket.join(room);
     console.log("User joined the room" + room)
   });
-
   socket.on('typing' , (room) => socket.in(room).emit("typing"));
   socket.on('stop typing' , (room) => socket.in(room).emit("stop typing"));
-
+  
   socket.on('new message', (newMessageRecieved) => {
     var chat = newMessageRecieved.chat;
     if(!chat.users) return console("chat.users not defined");
@@ -69,11 +66,7 @@ io.on("connection", (socket) => {
 
       socket.in(user._id).emit("message recieved", newMessageRecieved);
     })
-
-
-
   })
-  
   socket.off("setup", () => {
     console.log("USER DISCONNECTED");
     socket.leave(userData._id);

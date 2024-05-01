@@ -1,12 +1,10 @@
-import React, { useContext, useRef } from "react";
+import React, {  useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "../Styles/main.css";
-import { UserContext } from "./userContext/userContext";
 import { NavLink } from "react-router-dom"; // Update import here
-import { Nav, NavDropdown } from "react-bootstrap";
 import { ChatState } from "./userContext/ChatProvider";
-import { BellIcon, ChevronDownIcon } from '@chakra-ui/icons';
-import { Avatar, Box, Button, Menu, MenuButton, MenuList,MenuItem,  Text, Tooltip, Wrap, WrapItem, Flex, Spacer, MenuDivider } from '@chakra-ui/react';
+import {  ChevronDownIcon } from '@chakra-ui/icons';
+import { Avatar,  Button, Menu, MenuButton, MenuList,MenuItem,  Text, Flex, Spacer, MenuDivider } from '@chakra-ui/react';
 import ProfileModel from "./chatComponents/ProfileModel";
 import axios from 'axios';
 
@@ -18,11 +16,10 @@ function NavBar(props) {
     const handleLogout = async () => {
       try {
         const response = await axios.post("http://localhost:5000/auth/Logout", {}, {
-          withCredentials: true // Include credentials (cookies) in the request
+          withCredentials: true 
         });
   
         if (response.status === 200) {
-          // Redirect or perform any actions after successful logout
           window.location = "/"; 
         } else {
           console.error("Failed to logout");

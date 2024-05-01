@@ -4,7 +4,6 @@ import axios from "axios";
 const router = express.Router();
 
 router.get("/scores", async (req, res) => {
-
   try {
     const response = await axios.get('https://api-football-v1.p.rapidapi.com/v3/fixtures', {
       params: 
@@ -17,7 +16,6 @@ router.get("/scores", async (req, res) => {
         'X-RapidAPI-Host': 'api-football-v1.p.rapidapi.com'
       }
     });
-
     res.json(response.data);
   } catch (error) {
     console.error('Error fetching data:', error);

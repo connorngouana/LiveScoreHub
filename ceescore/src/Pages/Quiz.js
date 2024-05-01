@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { ChatState } from '../component/userContext/ChatProvider';
 import { Heading, Text, Button, Center } from '@chakra-ui/react';

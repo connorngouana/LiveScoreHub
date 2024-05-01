@@ -74,7 +74,7 @@ router.post('/login', async (req, res) => {
         
         console.log("User password has been checked...password: ", passwordMatch);
 
-        const token = jwt.sign({ userId: user._id }, "your-secret-key", {
+        const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET, {
             expiresIn: "1d",
         });
 

@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { ChatState } from '../userContext/ChatProvider';
-import { Box, Stack, Text, useToast, Button, ChakraProvider } from '@chakra-ui/react'; // Import ChakraProvider
+import { Box, Stack, Text, useToast, Button } from '@chakra-ui/react'; // Import ChakraProvider
 import axios from 'axios';
-import Cookies from 'js-cookie';
 import { AddIcon } from '@chakra-ui/icons';
 import ChatLoading from './ChatLoading';
 import { getSender } from '../../config/ChatLogic';
@@ -40,7 +39,6 @@ function MyChat({fetchAgain}) {
 
   useEffect(() => {
     setLoggedUser(user);
-    console.log(user._id);
     fetchChat();
   }, [fetchAgain]);
 

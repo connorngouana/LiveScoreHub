@@ -24,6 +24,8 @@ const SingleChat = ({ fetchChat, setFetchChat }) => {
     const [typing, setTyping] = useState(false);
     const [isTyping, setIsTyping] = useState(false);
     const toast = useToast();
+    
+    //USED TO DISPLAY THE LOADING ICON FROM LOTTIE I IMPORTED
     const defaultOptions = {
         loop: true,
         autoplay: true,
@@ -110,7 +112,6 @@ const SingleChat = ({ fetchChat, setFetchChat }) => {
 
     useEffect(() => {
         fetchMessages();
-
         selectedChatCompare = selectedChat;
     }, [selectedChat]);
 
@@ -134,7 +135,6 @@ const SingleChat = ({ fetchChat, setFetchChat }) => {
         setNewMessage(e.target.value);
 
         if (!socketConnected) return;
-
         if (!typing) {
             setTyping(true);
             socket.emit("typing", selectedChat._id);

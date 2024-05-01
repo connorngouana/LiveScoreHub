@@ -51,7 +51,6 @@ const Play = () => {
     
     const handleNextButtonClick = () => {
         if (currentQuestionIndex === selectedQuestions.length - 1) {
-            // Show toast error when trying to go next on the last question
             toast({
                 title: "Error",
                 description: "You have reached the last question.",
@@ -64,13 +63,12 @@ const Play = () => {
             if (selectedQuestions[currentQuestionIndex].answered) {
                 setNumberOfAnsweredQuestions(numberOfAnsweredQuestions + 1);
             }
-            setUsedFiftyFifty(false); // Reset the usedFiftyFifty state
+            setUsedFiftyFifty(false); 
         }
     };
     
     const handlePreviousButtonClick = () => {
         if (currentQuestionIndex === 0) {
-            // Show toast error when trying to go previous on the first question
             toast({
                 title: "Error",
                 description: "You are on the first question.",

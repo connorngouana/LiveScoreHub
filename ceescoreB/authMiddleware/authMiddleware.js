@@ -18,28 +18,21 @@ const authMiddleware = async (req, res, next) => {
       return res.status(401).json({ error: "Unauthorized" });
     }
 
-    const decoded = jwt.verify(token, "your-secret-key");
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
 
     if (!decoded) {
       return res.status(401).json({ error: "Invalid Token" });
     }
 
-    // Check if decoded token contains userId
     if (!decoded.userId) {
       return res.status(401).json({ error: "Invalid Token" });
     }
 
-    // Fetch user from database using userId
     const user = await CollectionUser.findById(decoded.userId).select("-password");
-
     if (!user) {
       return res.status(401).json({ error: "User not found" });
     }
-
-    // Attach user object to the request for further usage
     req.user = user;
-
-    // Proceed to the next middleware
     next();
   } catch (error) {
     console.error(error);

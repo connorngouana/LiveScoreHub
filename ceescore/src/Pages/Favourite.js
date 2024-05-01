@@ -5,7 +5,6 @@ import axios from 'axios';
 import ChatLoading from '../component/chatComponents/ChatLoading';
 import TeamListItem from '../component/UserAvatar/TeamListItem';
 import FavouriteFixtures from '../component/FavouriteComponents/FavouriteFixtures';
-import TeamStats from '../component/FavouriteComponents/TeamStats';
 import { ChatState } from '../component/userContext/ChatProvider';
 import { NavLink } from 'react-router-dom';
 

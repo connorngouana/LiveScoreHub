@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { FaSearch } from 'react-icons/fa';
 import { BellIcon } from '@chakra-ui/icons';
-import { Avatar, Box, Button, Drawer, DrawerBody, DrawerContent, DrawerHeader, DrawerOverlay, Input, Menu, MenuButton, MenuItem, MenuList, Spinner, Text, Tooltip, effect, useDisclosure } from '@chakra-ui/react';
+import { Box, Button, Drawer, DrawerBody, DrawerContent, DrawerHeader, DrawerOverlay, Input, Menu, MenuButton, MenuItem, MenuList, Spinner, Text, Tooltip, effect, useDisclosure } from '@chakra-ui/react';
 import { ChatState } from '../userContext/ChatProvider';
 import { useToast } from '@chakra-ui/react';
 import axios from 'axios';
 import ChatLoading from './ChatLoading';
 import UserListItem from '../UserAvatar/UserListItem';
-import { getSender, getSenderFull } from '../../config/ChatLogic';
+import { getSender } from '../../config/ChatLogic';
 import { Badge } from '@chakra-ui/react'
 
 function ChatsSideDrawer() {
@@ -60,9 +60,9 @@ function ChatsSideDrawer() {
     const config = {
       headers: {
         "Content-type": "application/json",
-        Authorization: `Bearer ${token}`, // Use the entire user object containing the JWT token
+        Authorization: `Bearer ${token}`, 
       },
-      withCredentials: true, // Allow sending cookies with the request
+      withCredentials: true, 
     };
       
       const {data} = await axios.post(`http://localhost:5000/chat/accesschat`, {userId}, config);
